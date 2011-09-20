@@ -30,7 +30,7 @@
                     'display_name'      : 'Facebook',
                     'referrer_track'    : '',
                     'language'          : 'de_DE',
-					'action'            : 'like'
+                    'action'            : 'like'
                 }, 
                 'twitter' : {
                     'status'            : 'on', 
@@ -120,68 +120,68 @@
             return encodeURIComponent(title);
         }
 
-		function storeAcknowledge(type) {
-			// An dieser Stelle muss die Zustimmung serverseitig mit einer teilanonymisierten IP-Adresse des Users
-			// gespeichert werden.
-			// Dazu kann einfach an dieser Stelle ein GET-Request erfolgen, der dann serverseitig die Speicherung
-			// übernimmt. Type ist "fb_like", "tweet" oder "gplusone", wenn der User auf einen der Buttons geklickt hat
-			// und "facebook", "twitter" oder "gplus", wenn er eine Checkbox angeklickt hat.
+        function storeAcknowledge(type) {
+            // An dieser Stelle muss die Zustimmung serverseitig mit einer teilanonymisierten IP-Adresse des Users
+            // gespeichert werden.
+            // Dazu kann einfach an dieser Stelle ein GET-Request erfolgen, der dann serverseitig die Speicherung
+            // übernimmt. Type ist "fb_like", "tweet" oder "gplusone", wenn der User auf einen der Buttons geklickt hat
+            // und "facebook", "twitter" oder "gplus", wenn er eine Checkbox angeklickt hat.
 
-			//$.get('/saveAcknowledge?type=' + type);
-		}
+            //$.get('/saveAcknowledge?type=' + type);
+        }
 
-		function btnClick(e) {
-			if ($(this).index() == 1) {
-				$(e.target).closest('.help_info').find('.switch').click();
-				var type = $(e.target).closest('.help_info').find('.dummy_btn').attr('class').split(' ')[0];
-				storeAcknowledge(type);
-			} else {
-				 $(e.target).closest('.help_info').removeClass('display');
-			}
-		}
+        function btnClick(e) {
+            if ($(this).index() == 1) {
+                $(e.target).closest('.help_info').find('.switch').click();
+                var type = $(e.target).closest('.help_info').find('.dummy_btn').attr('class').split(' ')[0];
+                storeAcknowledge(type);
+            } else {
+                 $(e.target).closest('.help_info').removeClass('display');
+            }
+        }
 
-		function cbMousedown(e) {
+        function cbMousedown(e) {
 
-			var el =  $(e.target).is('label')? $(e.target).parent().find('#' + $(e.target).attr('for')) : $(e.target);
+            var el =  $(e.target).is('label')? $(e.target).parent().find('#' + $(e.target).attr('for')) : $(e.target);
 
-			if (el.attr('checked') != 'checked') {
-				var selector = '';
+            if (el.attr('checked') != 'checked') {
+                var selector = '';
 
-				if (el.attr('name') == 'perma_status_facebook') {
-					selector = 'facebook';
-				} else if (el.attr('name') == 'perma_status_twitter') {
-					selector = 'twitter';
-				} else {
-					selector = 'gplus';
-				}
+                if (el.attr('name') == 'perma_status_facebook') {
+                    selector = 'facebook';
+                } else if (el.attr('name') == 'perma_status_twitter') {
+                    selector = 'twitter';
+                } else {
+                    selector = 'gplus';
+                }
 
-				var left = Math.round((el.closest('li').position().left + el.closest('li').find('div').outerWidth()) / 2);
-				var layer = $('#socialshareprivacy .cb_layer').length ? $('#socialshareprivacy .cb_layer') : $('<div class="cb_layer info" />').
-					appendTo('#socialshareprivacy .social_share_privacy_area');
+                var left = Math.round((el.closest('li').position().left + el.closest('li').find('div').outerWidth()) / 2);
+                var layer = $('#socialshareprivacy .cb_layer').length ? $('#socialshareprivacy .cb_layer') : $('<div class="cb_layer info" />').
+                    appendTo('#socialshareprivacy .social_share_privacy_area');
 
-				var pos = el.closest('li').position();
-				var left = (pos.left - layer.outerWidth()) +  el.closest('li').find('div').outerWidth();
-				function onClick(){
-					if ($(this).index() == 1) {
-						storeAcknowledge(selector);
-						el.attr('checked', true);
-						$('#socialshareprivacy input[name=' + el.attr('name') + ']').click();
-						el.attr('checked', true);
-					}
-					layer.hide().find('input').unbind('click', onClick);
-				}
+                var pos = el.closest('li').position();
+                var left = (pos.left - layer.outerWidth()) +  el.closest('li').find('div').outerWidth();
+                function onClick(){
+                    if ($(this).index() == 1) {
+                        storeAcknowledge(selector);
+                        el.attr('checked', true);
+                        $('#socialshareprivacy input[name=' + el.attr('name') + ']').click();
+                        el.attr('checked', true);
+                    }
+                    layer.hide().find('input').unbind('click', onClick);
+                }
 
-				layer.
-					html($('#socialshareprivacy li.' + selector +' .info').html()).
-					show().
-					data('type', selector).
-					css({
-						'left' : left + 'px',
-						'top' : pos.top + 'px'
-					}).find('input').click(onClick);
+                layer.
+                    html($('#socialshareprivacy li.' + selector +' .info').html()).
+                    show().
+                    data('type', selector).
+                    css({
+                        'left' : left + 'px',
+                        'top' : pos.top + 'px'
+                    }).find('input').click(onClick);
 
-			}
-		}
+            }
+        }
 
         return this.each(function(){
             // Facebook
@@ -278,16 +278,16 @@
             // Der Info/Settings-Bereich wird eingebunden
             context.append('<li class="settings_info"><div class="settings_info_menu off perma_option_off"><a href="'+options.info_link+'"><span class="help_info icon"><span class="info">'+options.txt_help+'</span></span></a></div></li>');
 
-			// Mouseup auf die Buttons "OK" und "Abbrechen"
-			$('.help_info input').live('click', btnClick);
+            // Mouseup auf die Buttons "OK" und "Abbrechen"
+            $('.help_info input').live('click', btnClick);
 
             // Info-Overlays einblenden
             $('.help_info:not(.info_off)', context).live('mouseenter', function(){
-				var $info_wrapper = $(this);
-				$('#socialshareprivacy .facebook.help_info.display').removeClass('display');
-				$(this).addClass('display');
-				$('#socialshareprivacy .cb_layer').hide();
-			});
+                var $info_wrapper = $(this);
+                $('#socialshareprivacy .facebook.help_info.display').removeClass('display');
+                $(this).addClass('display');
+                $('#socialshareprivacy .cb_layer').hide();
+            });
 
             $('.help_info', context).live('mouseleave', function(){
                 var timeout_id = $(this).data('timeout_id');
@@ -354,9 +354,9 @@
                     $container_settings_info.find('form fieldset').append('<input type="checkbox" name="perma_status_gplus" id="perma_status_gplus"'+perma_status_gplus+' /><label for="perma_status_gplus">'+options.services.gplus.display_name+'</label>');
                 }
 
-				// Mouselicks auf die Checkboxen
-				$container_settings_info.find('input, label').live('mousedown', cbMousedown);
-				
+                // Mouselicks auf die Checkboxen
+                $container_settings_info.find('input, label').live('mousedown', cbMousedown);
+                
                 // Cursor auf Pointer setzen fuer das Zahnrad
                 $container_settings_info.find('span.settings').css('cursor','pointer');
 
