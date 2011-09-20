@@ -68,10 +68,13 @@
         var options = $.extend(true, defaults, options);
 
         if((options.services.facebook.status == 'on' && options.services.facebook.app_id != '__FB_APP-ID__') || options.services.twitter.status == 'on' || options.services.gplusone.status == 'on'){
-            $('head').append('<link rel="stylesheet" type="text/css" href="'+options.css_path+'" />');
+
+            link = $('<link rel="stylesheet" type="text/css"/>');
+            $('head').append(link);
+            link.attr('href', options.css_path);
+
             $(this).prepend('<ul class="social_share_privacy_area"></ul>');
             var context = $('.social_share_privacy_area', this);
-            
             // als URL wird erstmal die derzeitige Dokument-URL angenommen
             var uri = document.location.href;
             
