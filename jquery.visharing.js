@@ -23,7 +23,7 @@
                     'status'            : 'on',
                     'app_id'            : '__FB_APP-ID__',
                     'dummy_img'         : 'socialshareprivacy/images/dummy_facebook.png',
-                    'txt_info'          : '<p><em style="color:green;">Dies ist ein Mustertext ohne Gewähr. Bitte stimmen Sie den von Ihnen verwendeten Text mit Ihrem Datenschutzbeauftragten ab.</em><br/>Bereits durch das Anzeigen des Like-Buttons werden personenbeziehbare und eventuell auch personenbezogenen Daten von mir an Facebook in die USA übertragen. Des Weiteren werden Cookies eingesetzt, deren Funktionalität von Facebook nicht vollständig und abschließend geklärt ist.<br />Beachten Sie bitte auch die Informationen in der <a href="details.html" target="_blank">Datenschutzerklärung</a>.<br />Ich stimme diesen Datenübertragungen (bis auf Widerruf) zu.</p><input class="btn" rel="fb-ok" type="button" value="OK, einverstanden" /> <input class="btn" rel="fb-cancel" type="button" value="Abbrechen" />',
+                    'txt_info'          : '<p><em style="color:green;">Dies ist ein Mustertext ohne GewÃ¤hr. Bitte stimmen Sie den von Ihnen verwendeten Text mit Ihrem Datenschutzbeauftragten ab.</em><br/>Bereits durch das Anzeigen des Like-Buttons werden personenbeziehbare und eventuell auch personenbezogenen Daten von mir an Facebook in die USA Ã¼bertragen. Des Weiteren werden Cookies eingesetzt, deren FunktionalitÃ¤t von Facebook nicht vollstÃ¤ndig und abschlieÃŸend geklÃ¤rt ist.<br />Beachten Sie bitte auch die Informationen in der <a href="facebook.html" target="_blank">DatenschutzerklÃ¤rung</a>.<br />Ich stimme diesen DatenÃ¼bertragungen (bis auf Widerruf) zu.</p><input class="btn" rel="fb-ok" type="button" value="OK, einverstanden" /> <input class="btn" rel="fb-cancel" type="button" value="Abbrechen" />',
                     'txt_fb_off'        : 'nicht mit Facebook verbunden',
                     'txt_fb_on'         : 'mit Facebook verbunden',
                     'perma_option'      : 'on',
@@ -35,7 +35,7 @@
                 'twitter' : {
                     'status'            : 'on', 
                     'dummy_img'         : 'socialshareprivacy/images/dummy_twitter.png',
-                    'txt_info'          : '<p><em style="color:green;">Dies ist ein Mustertext ohne Gewähr. Bitte stimmen Sie den von Ihnen verwendeten Text mit Ihrem Datenschutzbeauftragten ab.</em><br/>Bereits durch das Anzeigen des Tweet-Buttons werden personenbeziehbare und eventuell auch personenbezogenen Daten von mir an Twitter in die USA übertragen. Des Weiteren werden Cookies eingesetzt, deren Funktionalität von Twitter nicht vollständig und abschließend geklärt ist.<br />Ich stimme diesen Datenübertragungen (bis auf Widerruf) zu.</p><input class="btn" rel="tw-ok" type="button" value="OK, einverstanden" /> <input class="btn" rel="tw-cancel" type="button" value="Abbrechen" />',
+                    'txt_info'          : '<p><em style="color:green;">Dies ist ein Mustertext ohne GewÃ¤hr. Bitte stimmen Sie den von Ihnen verwendeten Text mit Ihrem Datenschutzbeauftragten ab.</em><br/>Bereits durch das Anzeigen des Tweet-Buttons werden personenbeziehbare und eventuell auch personenbezogenen Daten von mir an Twitter in die USA Ã¼bertragen. Des Weiteren werden Cookies eingesetzt, deren FunktionalitÃ¤t von Twitter nicht vollstÃ¤ndig und abschlieÃŸend geklÃ¤rt ist.<br />Beachten Sie bitte auch die Informationen in der <a href="twitter.html" target="_blank">DatenschutzerklÃ¤rung</a>.<br />Ich stimme diesen DatenÃ¼bertragungen (bis auf Widerruf) zu.</p><input class="btn" rel="tw-ok" type="button" value="OK, einverstanden" /> <input class="btn" rel="tw-cancel" type="button" value="Abbrechen" />',
                     'txt_twitter_off'   : 'nicht mit Twitter verbunden',
                     'txt_twitter_on'    : 'mit Twitter verbunden',
                     'perma_option'      : 'on',
@@ -46,7 +46,7 @@
                 'gplus' : {
                     'status'            : 'on',
                     'dummy_img'         : 'socialshareprivacy/images/dummy_gplus.png',
-                    'txt_info'          : '<p><em style="color:green;">Dies ist ein Mustertext ohne Gewähr. Bitte stimmen Sie den von Ihnen verwendeten Text mit Ihrem Datenschutzbeauftragten ab.</em><br/>Bereits durch das Anzeigen des +1-Buttons werden personenbeziehbare und eventuell auch personenbezogenen Daten von mir an Google in die USA übertragen. Des Weiteren werden Cookies eingesetzt, deren Funktionalität von Google nicht vollständig und abschließend geklärt ist.<br />Ich stimme diesen Datenübertragungen (bis auf Widerruf) zu.</p><input class="btn" rel="g-ok" type="button" value="OK, einverstanden" /> <input class="btn" rel="g-cancel" type="button" value="Abbrechen" />',
+                    'txt_info'          : '<p><em style="color:green;">Dies ist ein Mustertext ohne GewÃ¤hr. Bitte stimmen Sie den von Ihnen verwendeten Text mit Ihrem Datenschutzbeauftragten ab.</em><br/>Bereits durch das Anzeigen des +1-Buttons werden personenbeziehbare und eventuell auch personenbezogenen Daten von mir an Google in die USA Ã¼bertragen. Des Weiteren werden Cookies eingesetzt, deren FunktionalitÃ¤t von Google nicht vollstÃ¤ndig und abschlieÃŸend geklÃ¤rt ist.<br />Beachten Sie bitte auch die Informationen in der <a href="google.html" target="_blank">DatenschutzerklÃ¤rung</a>.<br />Ich stimme diesen DatenÃ¼bertragungen (bis auf Widerruf) zu.</p><input class="btn" rel="g-ok" type="button" value="OK, einverstanden" /> <input class="btn" rel="g-cancel" type="button" value="Abbrechen" />',
                     'txt_gplus_off'     : 'nicht mit Google+ verbunden',
                     'txt_plus_on'       : 'mit Google+ verbunden',
                     'perma_option'      : 'on',
@@ -56,7 +56,7 @@
                 }
             },
             'info_link'         : 'http://www.heise.de/ct/artikel/2-Klicks-fuer-mehr-Datenschutz-1333879.html',
-            'txt_help'          : 'Wenn Sie die Häkchen setzen, werden künftig personenbeziehbare oder personenbezogene Daten von Ihnen auch bei künftigen Besuch dieses Webauftritts an Facebook, Twitter oder Google gesendet, ohne dass Sie in der Zukunft noch einmal explizit einwilligen müssen. Zu diesem Zweck wird beim Aktivieren einer Checkbox ein Cookie gesetzt. Durch Deaktivieren der Checkbox wird dieses Cookie wieder entfernt.<br />Von Facebook, Twitter und Google werden jeweils auch Cookies eingesetzt. Beachten Sie bitte auch die Informationen in der Datenschutzerklärung.<br />Ich stimme diesen Datenübertragungen auch für die Zukunft (bis auf Widerruf) zu.',
+            'txt_help'          : '<em style="color:green;">Dies ist ein Mustertext ohne GewÃ¤hr. Bitte stimmen Sie den von Ihnen verwendeten Text mit Ihrem Datenschutzbeauftragten ab.</em><br />Wenn Sie die HÃ¤kchen setzen, werden kÃ¼nftig personenbeziehbare oder personenbezogene Daten von Ihnen auch bei kÃ¼nftigen Besuch dieses Webauftritts an Facebook, Twitter oder Google gesendet, ohne dass Sie in der Zukunft noch einmal explizit einwilligen mÃ¼ssen. Zu diesem Zweck wird beim Aktivieren einer Checkbox ein Cookie gesetzt. Durch Deaktivieren der Checkbox wird dieses Cookie wieder entfernt.<br />Von Facebook, Twitter und Google werden jeweils auch Cookies eingesetzt. Beachten Sie bitte auch die Informationen in unseren DatenschutzerklÃ¤rungen zu <a href="facebook.html" target="_blank">Facebook</a>, <a href="twitter.html" target="_blank">Twitter</a> und <a href="google.html" target="_blank">Google</a>.<br />Ich stimme diesen DatenÃ¼bertragungen auch fÃ¼r die Zukunft (bis auf Widerruf) zu.',
             'settings_perma'    : 'Dauerhaft aktivieren und Daten&uuml;ber&shy;tragung zustimmen:',
             'cookie_path'       : '/',
             'cookie_domain'     : document.location.host,
@@ -127,7 +127,7 @@
             // An dieser Stelle muss die Zustimmung serverseitig mit einer teilanonymisierten IP-Adresse des Users
             // gespeichert werden.
             // Dazu kann einfach an dieser Stelle ein GET-Request erfolgen, der dann serverseitig die Speicherung
-            // übernimmt. Type ist "fb_like", "tweet" oder "gplusone", wenn der User auf einen der Buttons geklickt hat
+            // Ã¼bernimmt. Type ist "fb_like", "tweet" oder "gplusone", wenn der User auf einen der Buttons geklickt hat
             // und "facebook", "twitter" oder "gplus", wenn er eine Checkbox angeklickt hat.
 
             //$.get('/saveAcknowledge?type=' + type);
@@ -279,7 +279,7 @@
             }
 
             // Der Info/Settings-Bereich wird eingebunden
-            context.append('<li class="settings_info"><div class="settings_info_menu off perma_option_off"><a href="'+options.info_link+'"><span class="help_info icon"><span class="info">'+options.txt_help+'</span></span></a></div></li>');
+            context.append('<li class="settings_info"><div class="settings_info_menu off perma_option_off"><a href="'+options.info_link+'"></a><span class="help_info icon"><span class="info">'+options.txt_help+'</span></span></div></li>');
 
             // Mouseup auf die Buttons "OK" und "Abbrechen"
             $('.help_info input').live('click', btnClick);
